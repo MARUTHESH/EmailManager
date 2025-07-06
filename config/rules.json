@@ -1,0 +1,27 @@
+[
+  {
+    "name": "WellFound Filter",
+    "predicate": "AND",
+    "conditions": [
+      {
+        "field": "sender",
+        "operator": "contains",
+        "value": "wellfound.com"
+      },
+      {
+        "field": "received_at",
+        "operator": "less_than_days",
+        "value": 30
+      }
+    ],
+    "actions": [
+      {
+        "type": "mark_read"
+      },
+      {
+        "type": "move_to",
+        "folder": "Inbox"
+      }
+    ]
+  }
+]
