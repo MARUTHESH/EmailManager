@@ -36,7 +36,7 @@ pip install -r requirements.txt
 cd scripts
 
 ## Run the following command to fetch emails from the gmail and save them in db
-python3 fetch_and_process.py
+python3 fetch_and_save.py
 
 # Run the following command to fetch the emails from db and perform the actions
 #based on the rules defined in the config/rules.json
